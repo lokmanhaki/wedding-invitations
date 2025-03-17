@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+</head>
+<body class="items-center justify-center mx-auto space-y-6 mx-4 mt-10 w-full max-w-sm ">
+    <div class="text-center mx-4">
+        <h1 class="text-xl font-semibold mb-2 uppercase tracking-wide">The Wedding of</h1>
+        <p class="text-4xl text-gray-700 font-bold tracking-wide" style="font-family: 'Alex Brush', cursive;">Putri & Lukman</p>
+        <p class="text-gray-700 uppercase">11-12 April 2025 Jam 08.00 WIB</p>
+        <div id="countdown" class="mt-4 text-lg flex justify-center gap-2">
+            <div class="bg-gray-50 rounded-md py-2 px-3">
+                <div id="days" class="text-2xl"></div>
+                <div class="text-xs text-gray-600">days</div>
+            </div>
+            <div class="bg-gray-50 rounded-md py-2 px-4">
+                <div id="hours" class="text-2xl"></div>
+                <div class="text-xs text-gray-600">hours</div>
+            </div>
+            <div class="bg-gray-50 rounded-md py-2 px-4">
+                <div id="minutes" class="text-2xl"></div>
+                <div class="text-xs text-gray-600">minutes</div>
+            </div>
+            <div class="bg-gray-50 rounded-md py-2 px-4">
+                <div id="seconds" class="text-2xl"></div>
+                <div class="text-xs text-gray-600">seconds</div>
+            </div>
+        </div>
+    </div>
+    <div class=" mx-4">
+        <div class="border p-4 rounded-lg text-center w-full max-w-sm  space-y-4">
+            <p class="font-semibold text-gray-700 text-xl">Find Our Location</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.743172330473!2d100.407653!3d-0.35165799999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMjEnMDYuMCJTIDEwMMKwMjQnMjcuNiJF!5e0!3m2!1sid!2sid!4v1742170297387!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="text-gray-700 mt-2">
+                Jl. Raya Sungai Pua, Gang Tiagan I, No. 90, Kampung Tiakomar, Bukittinggi
+            </p>
+            <a href="https://www.google.com/maps?q=0%C2%B021'06.0%22S+100%C2%B024'27.6%22E&z=17" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2 focus:outline-none focus:shadow-outline">
+                DIRECTIONS
+            </a>
+        </div>
+    </div>
+    <div class=" mx-4">
+        <p class="text-center font-semibold text-gray-700 text-xl">Wedding Gift</p>
+        <p class="text-center text-gray-500">Doa dan restu Anda merupakan karunia yang sangat berarti bagi kami.</p>
+    </div>
+    <div class="flex justify-center  mx-4">
+        <div class="bg-gray-50 border p-6 rounded-lg text-center w-full max-w-sm">
+            <img src="img1.png" alt="Logo Bank Jago" class="mx-auto h-10 mb-4">
+            <div class="flex mx-auto items-center justify-center">
+                <p class="text-lg font-semibold">Lukman Hakim - Bank Jago</p>
+            </div>
+            <p class="text-gray-700 mb-2"> Nomor Rekening:</p>
+            <div class="flex items-center justify-center">
+                <input type="text" id="rekening1" value="501396701925" class="border rounded-md px-3 py-2 text-center w-3/4 focus:outline-none focus:ring-2 focus:ring-blue-500" readonly>
+                <button class="copyButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2 focus:outline-none focus:shadow-outline" data-target="rekening1">
+                    Salin
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center  mx-4">
+        <div class="bg-gray-50 border p-6 rounded-lg text-center w-full max-w-sm">
+        <div class="flex justify-center items-center gap-4">
+                <img src="img2.png" alt="Logo Dana" class="h-10">
+                <img src="img3.png" alt="Logo Gopay" class="h-10">
+            </div>
+            <div class="flex mx-auto items-center justify-center">
+                <p class="text-lg font-semibold">Lukman Hakim</p>
+            </div>
+            <p class="text-gray-700 mb-2">Nomor DANA/GOPAY :</p>
+            <div class="flex items-center justify-center">
+                <input type="text" id="rekening2" value="085211108273" class="border rounded-md px-3 py-2 text-center w-3/4 focus:outline-none focus:ring-2 focus:ring-blue-500" readonly>
+                <button class="copyButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2 focus:outline-none focus:shadow-outline" data-target="rekening2">
+                    Salin
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-700 p-2">
+        <p class="text-white text-center">The Wedding of Putri & Lukman | 2025</p>
+    </div>
+
+    <script>
+        // Countdown
+        const weddingDate = new Date("April 11, 2025 08:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+
+
+        const copyButtons = document.querySelectorAll('.copyButton');
+
+        copyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.dataset.target;
+                const rekeningInput = document.getElementById(targetId);
+
+                rekeningInput.select();
+                rekeningInput.setSelectionRange(0, 99999);
+                document.execCommand('copy');
+
+                this.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(() => {
+                    this.innerHTML = 'Salin';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
